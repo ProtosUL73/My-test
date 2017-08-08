@@ -1,0 +1,70 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="jquery.fullPage.js"></script>
+<script type="text/javascript" src="examples.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			anchors: ['firstPage', 'secondPage'],
+			menu: '#menu',
+			scrollingSpeed: 1000
+		});
+	});
+$(document).ready(function() {
+	$('.cmn-toggle-switch').click(function(){
+		$(this).toggleClass("active");
+	});
+});
+</script>
+</head>
+<body>
+<div class="scroll">
+<div class="main_menu">
+	<ul class="top_menu" id="menu">
+		<li style="text-align:left"><button class="cmn-toggle-switch cmn-toggle-switch__htx"><span></span></button></li>
+		<li data-menuanchor="firstPage"><a href="#firstPage">Item 1</a></li>
+		<li data-menuanchor="secondPage"><a href="#secondPage">Item 2</a></li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+	</ul>
+</div>
+
+<div id="fullpage">
+
+	<div class="section active" id="section0">
+		<div class="first_block">
+			<div class="center_block">
+				<p class="center_block_item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section1">
+		<div class="block_two">
+			<h2 class="block2__elem1">Screen 2 title</h2>
+			<div class="block2__elem2">
+				<img src="" class="block2__elem2--img">
+				<p class="block2__elem2--item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="block2__elem2">
+				<img src="" class="block2__elem2--img">
+				<p class="block2__elem2--item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="block2__elem2">
+				<img src="" class="block2__elem2--img">
+				<p class="block2__elem2--item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="block2__elem2">
+				<img src="" class="block2__elem2--img">
+				<p class="block2__elem2--item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
